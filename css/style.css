@@ -377,6 +377,73 @@ hr {
   overflow: hidden;
 }
 
+.cta-download-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+  text-align: left;
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code img {
+  width: min(100%, 280px);
+  padding: 16px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.32);
+  border: 1px solid var(--accent-border);
+  box-shadow: var(--soft-shadow);
+}
+
+.appstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.appstore-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+.appstore-button img {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+.cta-content h2 {
+  max-width: 640px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cta-content p {
+  max-width: 620px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 900px) {
+  .cta-download-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .cta-content h2,
+  .cta-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .mode-visual span {
   padding: 12px 16px;
   border-radius: 14px;
