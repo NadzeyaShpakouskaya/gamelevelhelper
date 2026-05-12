@@ -317,6 +317,7 @@ h2 {
 .section-copy {
   color: var(--muted);
   font-size: 1.08rem;
+  margin-bottom: 16px;
 }
 
 .features-grid {
@@ -497,6 +498,61 @@ margin-top: 28px;
   font-weight: 800;
 }
 
+.game-process-section {
+  padding: 20px 0 70px;
+}
+
+.game-process-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.game-process-card {
+  width: 100%;
+  padding: 18px;
+  border-radius: calc(var(--radius) + 12px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(175, 143, 131, 0.18));
+  border: 1px solid var(--accent-border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.game-process-image {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  border: 1px solid rgba(54, 4, 8, 0.14);
+  box-shadow: 0 16px 42px rgba(54, 4, 8, 0.12);
+}
+
+.game-process-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.game-process-content .section-copy {
+  margin: 0;
+  max-width: 560px;
+}
+
+@media (max-width: 900px) {
+  .game-process-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .game-process-content {
+    text-align: center;
+    align-items: center;
+  }
+}
 
 
 .phone-screenshot-portrait {
